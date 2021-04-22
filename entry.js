@@ -28,7 +28,7 @@ Vue.component('footer-nav', FooterNav);
 const globalEle = new Vue({
   data: { $isEle: false } // 是否 ele 用户
 });
-
+// 增加注释
 Vue.mixin({
   computed: {
     $isEle: {
