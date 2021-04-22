@@ -63,6 +63,7 @@
         const cnHref = href.indexOf('eleme.cn') > -1 || href.indexOf('element-cn') > -1 || href.indexOf('element.faas') > -1;
         if (cnHref || preferGithub) return;
         setTimeout(() => {
+          console.log('hello')
           if (this.lang !== 'zh-CN') return;
           this.$confirm('建议大陆用户访问部署在国内的站点，是否跳转？', '提示')
             .then(() => {
